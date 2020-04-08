@@ -31,4 +31,6 @@ document.getElementById("btnAll").addEventListener("click", function () {
 
     result.innerText = "¡Tu tarjeta número " + maskify + " es válida !";
   }
+
+  
 });
