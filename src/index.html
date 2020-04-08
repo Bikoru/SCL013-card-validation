@@ -1,14 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv=" X-UA-Compatible" content="ie=edge" />
+    <title>Válidador</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,500|Roboto:400,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header>
+      <nav class="nav">
+        <div class="content-nav">
+          <div class="logo">
+            <img src="img/logo.png" alt="" />
+          </div>
+          <div class="menu" id="menu">
+            <a href="#containerCheck" id="check" class="btnHeader">Verificar</a>
+            <a href="#containerHow" id="how" class="btnHeader"
+              >¿Cómo verificamos?</a
+            >
+            <a href="#containerUs" id="us" class="btnHeader">Nosotras</a>
+          </div>
+          <div class="icon" id="open">
+            <span>&#9776;</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Instrucciones-->
+    <main>
+      <section id="containerCheck">
+        <section class="instructions">
+          <h1 id="titleValidator">Válidador de Tarjeta Virtual</h1>
+          <p id="firstParagraph">
+            Si crees que sufriste de alguna estafa con tu nueva tarjeta de
+            crédito
+          </p>
+          <h3 id="relevant">
+            ¡Te invitamos a válidar el número de tu tarjeta virtual!
+          </h3>
+          <div id="contIcons">
+            <div id="Easy">
+              <p>
+                Sencillo
+                <img
+                  src="img/Iconos-sencillo.png"
+                  class="iconsIntro"
+                  alt="mano"
+                />
+              </p>
+              <!-- <p class="atributes">Sencillo</p> -->
+            </div>
+            <div id="Fast">
+              <p>
+                Rápido
+                <img
+                  src="img/Iconos-rapido.png"
+                  class="iconsIntro"
+                  alt="reloj="
+                />
+              </p>
+              <!-- <p class="atributes">Rápido</p> -->
+            </div>
+            <div id="Secure">
+              <p>
+                Seguro
+                <img
+                  src="img/Iconos-seguro.png"
+                  class="iconsIntro"
+                  alt="escudo"
+                />
+              </p>
+              <!-- <p class="atributes">Seguro</p> -->
+            </div>
+          </div>
+          <h3 id="motivation">¡Juntos te ayudamos a prevenir!</h3>
+        </section>
+        <!-- Formulario para solicitar tarjeta -->
+        <section class="card">
+          <div>
+            <h2 class="titleCard">Válida tu tarjeta</h2>
+            <p class="getInto">
+              Por favor ingresa el número de 16 dígitos de tu tarjeta
+            </p>
+          </div>
+          <div id="Card">
+            <input
+              type="text"
+              maxlength="16"
+              placeholder="#### #### #### 1234"
+              id="numberCard"
+              onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+              required
+            />
+            <button type="button" class="btnAll" id="btnAll">Válidar</button>
+          </div>
+          <div id="result">
+            <!-- Resultado Valido o no -->
+          </div>
+        </section>
+      </section>
+      <section id="containerHow">
+        <div>
+          <h2 class="titleNav">¿Cómo verificamos?</h2>
+          <p class="navParrafo">
+            Para válidar una tarjeta de crédito, utilizamos el "algoritmo de
+            Luhn", también conocido como "algoritmo de modulo 10". Es así que al
+            ingresar los dígitos de su tarjeta, nuestra herramienta web verifica
+            la autenticidad de ésta según los resultados de las operaciones de
+            sus números en el algoritmo.
+            <!-- insertar parte de explicación de wiki u otra página y poner "fuente" -->
+            <!-- insertar img de el algoritmo -->
+          </p>
+        </div>
+      </section>
+      <section id="containerUs">
+        <div>
+          <h2 class="titleNav">Nosotras</h2>
+          <p class="navParrafo">
+            Somos una empresa conformada por mujeres, que entrega diferentes
+            servicios virtuales. En este caso, facilitamos un validador de
+            tarjetas para clientes que utilizan tarjetas de crédito virtuales,
+            asegurando su autenticidad y validez para evitar situaciones
+            irregulares que pudiesen perjudicarlos. Queremos que te sientas
+            seguro y transparentar esta información para ti a través de nuestra
+            web. ¡Te animamos a invitar a tus amigos y familiares a usar nuestra
+            web!
+            <!-- insertar ilustración de nosotras o similar -->
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados ©2020</p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
