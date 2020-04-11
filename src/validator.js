@@ -1,34 +1,46 @@
 const validator = {
   isValid: (creditCardNumber) => {
-    
-    let resultCardNumber = [];
-    let numberPair = [];
-    let numberInpair = [];
+    const reverseCredit = creditCardNumber.toString().split("").reverse();
+    const total = [];
 
-    let result = false;
+    //i = es la posición / e = es el valor
+    reverseCredit.forEach((e, i) => {
+      if (i % 2 !== 0) {
+        // i = separa las posicies pares
+        let numPair = e * 2;
+        // e = multiplica por 2 los valores de las posiciones i
+        if (numPair >= 10) {
+          total.push(
+            numPair
+              .toString()
+              .split("")
+              .reduce((a, b) => parseInt(a) + parseInt(b))
+            // .toString = lo convierte en una cadena
+            // .split = lo separa por caracter
+            // parseInt (a) + (b) = vuelve números los digitos que separa .reduce
+            // .reduce = Cada caracter => a 1 digito lo separa y lo suma
+          );
+        } else {
+          total.push(numPair);
+          // .push añade un valor a un array
+        }
+      } else {
+        total.push(parseInt(e));
+        // capta los número que estaban en posiciones impares
+      }
+    });
 
-
-    // guardamos los números de manera invertida 
-    for (let index = creditCardNumber.length - 1; index >=0; index--) {
-      // Obtenemos el caracter de cada número mediante el for y los almacenamos en la variable "cNumber"
-      let cNumber = creditCardNumber.charAt(index);
-      // Luego convertimos a número los caracteres y los guardamos en "numParse" 
-      let numParse = parseInt(cNumber);
-
-      console.log(typeof(numParse));
+    const totalSum = total.reduce((a, b) => a + b);
+    // toma de inicio a fin el valor total y lo suma todo
+    if (totalSum % 10 === 0) {
+      // si termina en 0 retorna en true, si no, en false
+      return true;
+    } else {
+      return false;
     }
-
-
-   
-
-    result = true;
-
-    return result;
   },
 
-
-
-  maskify: (creditCardNumber) =>{
+  maskify: (creditCardNumber) => {
     let maskify = "";
     for (let i = 0; i < creditCardNumber.length; i++) {
       if (i <= creditCardNumber.length - 5) {
@@ -36,13 +48,11 @@ const validator = {
       } else {
         maskify = maskify + creditCardNumber[i];
       }
-  
+
       //result.innerText = "¡Tu tarjeta número " + maskify + " es válida !";
     }
 
     return maskify;
-
-  } 
-}
-
-export default validator
+  },
+};
+export default validator;
