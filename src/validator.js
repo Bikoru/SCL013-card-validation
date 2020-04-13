@@ -48,7 +48,6 @@ const validator = {
       } else {
         maskify = maskify + creditCardNumber[i];
       }
-
       //result.innerText = "¡Tu tarjeta número " + maskify + " es válida !";
     }
 

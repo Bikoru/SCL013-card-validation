@@ -12,10 +12,10 @@ describe('validator', () => {
     });
 
     test('debería retornar true para "4083952015263"', () => {
-      expect(validator.isValid(4083952015263)).toBe(true) //buscar documentación de jest
+      expect(validator.isValid("4083952015263")).toBe(true) 
     });
     test('debería retornar false para "1234567890123456"', () => {
-      expect(validator.isValid(1234567890123456)).toBe(false)
+      expect(validator.isValid("1234567890123456")).toBe(false)
     });
 
   });
@@ -26,7 +26,7 @@ describe('validator', () => {
     });
 
     test('Debería retornar "############5616" para "4556364607935616"', () => {
-      expect(validator.maskify(4556364607935616)).toBe("############5616")
+      expect(validator.maskify("4556364607935616")).toBe("############5616")
     });
   });
 });
