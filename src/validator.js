@@ -41,7 +41,7 @@ const validator = {
   },
 
   maskify: (creditCardNumber) => {
-    let maskify = "";
+    let maskify = '';
     for (let i = 0; i < creditCardNumber.length; i++) {
       if (i <= creditCardNumber.length - 5) {
         maskify = maskify + "#";
