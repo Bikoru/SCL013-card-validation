@@ -20,11 +20,11 @@
             <img src="img/logo.png" alt="" />
           </div>
           <div class="menu" id="menu">
-            <a href="#containerCheck" id="check" class="btnHeader">Verificar</a>
+            <a href="#containerCheck" id="check" class="btnHeader">VERIFICAR</a>
             <a href="#containerHow" id="how" class="btnHeader"
-              >¿Cómo verificamos?</a
+              >¿CÓMO VERIFICAMOS?</a
             >
-            <a href="#containerUs" id="us" class="btnHeader">Nosotras</a>
+            <a href="#containerUs" id="us" class="btnHeader">NOSOTRAS</a>
           </div>
           <div class="icon" id="open">
             <span>&#9776;</span>
@@ -45,7 +45,7 @@
             ¡Te invitamos a válidar el número de tu tarjeta virtual!
           </h3>
           <div id="contIcons">
-            <div id="Easy">
+            <div id="easy">
               <p>
                 Sencillo
                 <img
@@ -56,7 +56,7 @@
               </p>
               <!-- <p class="atributes">Sencillo</p> -->
             </div>
-            <div id="Fast">
+            <div id="fast">
               <p>
                 Rápido
                 <img
@@ -67,7 +67,7 @@
               </p>
               <!-- <p class="atributes">Rápido</p> -->
             </div>
-            <div id="Secure">
+            <div id="secure">
               <p>
                 Seguro
                 <img
@@ -93,12 +93,13 @@
             <input
               type="text"
               maxlength="16"
-              placeholder="#### #### #### 1234"
+              placeholder="1234 5678 9012 3456"
               id="numberCard"
-              onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+              onclick="return (event.charCode >= 48 && event.charCode <= 57)"
               required
             />
             <button type="button" class="btnAll" id="btnAll">Válidar</button>
+            <button type="button" class="btnAll" id="btnAll">Volver a validar</button>
           </div>
           <div id="result">
             <!-- Resultado Valido o no -->
@@ -114,7 +115,7 @@
             ingresar los dígitos de su tarjeta, nuestra herramienta web verifica
             la autenticidad de ésta según los resultados de las operaciones de
             sus números en el algoritmo.
-            <!-- insertar parte de explicación de wiki u otra página y poner "fuente" -->
+            <!-- insertar parte d explicación de wiki u otra página y poner "fuente" -->
             <!-- insertar img de el algoritmo -->
           </p>
         </div>
@@ -129,8 +130,9 @@
             asegurando su autenticidad y validez para evitar situaciones
             irregulares que pudiesen perjudicarlos. Queremos que te sientas
             seguro y transparentar esta información para ti a través de nuestra
-            web. ¡Te animamos a invitar a tus amigos y familiares a usar nuestra
-            web! 
+            web.
+           <p class="navParrafo"> ¡Te animamos a invitar a tus amigos y familiares a usar nuestra web! </p>
+          </p>
             <!-- insertar ilustración de nosotras o similar -->
           </p>
         </div>
