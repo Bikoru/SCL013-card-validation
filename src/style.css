@@ -89,7 +89,7 @@ nav .menu a:hover {
   padding: 0 40px;
   align-items: center;
   font-size: 15px;
-  background: rgb(255,255,255);
+  background: rgb(255, 255, 255);
   background-image: url("img/wall.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,10 +102,10 @@ nav .menu a:hover {
   justify-content: space-evenly;
   padding: 0 40px;
   align-items: center;
-/*   background-image: url("img/.png");
+  background-image: url("img/wall2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom left; */
+  background-position: bottom left;
 }
 
 #containerUs {
@@ -116,9 +116,9 @@ nav .menu a:hover {
   justify-content: space-evenly;
   padding: 0 40px;
   align-items: center;
-  background-image: url("img/mujeres.png");
+  background-image: url("img/wall3.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom left;
 }
 
