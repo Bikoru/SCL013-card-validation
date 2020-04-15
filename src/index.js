@@ -6,14 +6,16 @@ import validator from "./validator.js";
 document.getElementById("btnAll").addEventListener("click", function () {
   let cardNumber = document.getElementById("numberCard").value;
   let result = document.getElementById("result");
+  let btnCard = document.getElementById("Card");
+  let btnRetVal = document.getElementById("bttRetVal");
   let textR = "";
   /* Validar*/
 
   let newNumber = validator.isValid(cardNumber);
   if (newNumber === true) {
-    textR = "es valida";
+    textR = "es valida!";
   } else {
-    textR = "no es valido";
+    textR = "no es valido! Por favor comunicate con tu proveedor o entiendad bancaria.";
   }
 
   /* Mascara */
@@ -21,4 +23,6 @@ document.getElementById("btnAll").addEventListener("click", function () {
   let nMaskify = validator.maskify(cardNumber);
 
   result.innerText = "¡Tu tarjeta número " + nMaskify + " " + textR;
+  btnCard.style.display = "none";
+  btnRetVal.style.display = "block";
 });

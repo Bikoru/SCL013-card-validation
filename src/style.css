@@ -168,8 +168,34 @@ p {
 
 .getInto {
   font-family: "Roboto", sans-serif;
+  text-align: center;
   font-size: 18px;
-  margin: 15px;
+  margin: 10px 15px;
+}
+#enlPopup {
+  color: #b80d57;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+#titleVer.titleNav {
+  margin-top: 10%;
+  margin-bottom: 1%;
+}
+
+#extraPar {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #0f0f0f;
+}
+
+#luhnImg {
+  width: 40%;
+  margin: 1% 30%;
+  max-width: 100%;
+  height: auto;
 }
 
 .instructions {
@@ -298,7 +324,60 @@ footer {
 #result {
   font-family: "Quicksand", sans-serif;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   color: #070707;
+}
+
+#bttRetVal {
+  display: none;
+}
+
+#logoLab {
+  display: flex;
+  width: 25%;
+}
+
+/* Pop up*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+#popupBody{
+  width: 46%;
+  padding: 2%;
+  position: relative;
+  margin: 2% 30%;
+  transition: all 5s ease-in-out; /* Transicion de 5 segundos */
+}
+
+
+#imgPopup {
+  width: 73%;
+  border-radius: 15px;
+}
+
+#cerrar{
+  position: absolute;
+  top: 5%;
+  right: 31%;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #b80d57;
+  transition: all 200ms;
 }

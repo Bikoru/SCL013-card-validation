@@ -1,148 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv=" X-UA-Compatible" content="ie=edge" />
-    <title>Válidador</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/favicon.ico" type="image/ico" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:400,500|Roboto:400,500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <nav class="nav">
-        <div class="content-nav">
-          <div class="logo">
-            <img src="img/logo.png" alt="" />
-          </div>
-          <div class="menu" id="menu">
-            <a href="#containerCheck" id="check" class="btnHeader">VERIFICAR</a>
-            <a href="#containerHow" id="how" class="btnHeader"
-              >¿CÓMO VERIFICAMOS?</a
-            >
-            <a href="#containerUs" id="us" class="btnHeader">NOSOTRAS</a>
-          </div>
-          <div class="icon" id="open">
-            <span>&#9776;</span>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv=" X-UA-Compatible" content="ie=edge" />
+  <title>Válidador</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/ico" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500|Roboto:400,500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="content-nav">
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
         </div>
-      </nav>
-    </header>
-    <!--Instrucciones-->
-    <main>
-      <section id="containerCheck">
-        <section class="instructions">
-          <h1 id="titleValidator">Válidador de Tarjeta Virtual</h1>
-          <p id="firstParagraph">
-            Si crees que sufriste de alguna estafa con tu nueva tarjeta de
-            crédito
-          </p>
-          <h3 id="relevant">
-            ¡Te invitamos a válidar el número de tu tarjeta virtual!
-          </h3>
-          <div id="contIcons">
-            <div id="easy">
-              <p>
-                Sencillo
-                <img
-                  src="img/Iconos-sencillo.png"
-                  class="iconsIntro"
-                  alt="mano"
-                />
-              </p>
-              <!-- <p class="atributes">Sencillo</p> -->
-            </div>
-            <div id="fast">
-              <p>
-                Rápido
-                <img
-                  src="img/Iconos-rapido.png"
-                  class="iconsIntro"
-                  alt="reloj="
-                />
-              </p>
-              <!-- <p class="atributes">Rápido</p> -->
-            </div>
-            <div id="secure">
-              <p>
-                Seguro
-                <img
-                  src="img/Iconos-seguro.png"
-                  class="iconsIntro"
-                  alt="escudo"
-                />
-              </p>
-              <!-- <p class="atributes">Seguro</p> -->
-            </div>
-          </div>
-          <h3 id="motivation">¡Juntos te ayudamos a prevenir!</h3>
-        </section>
-        <!-- Formulario para solicitar tarjeta -->
-        <section class="card">
-          <div>
-            <h2 class="titleCard">Válida tu tarjeta</h2>
-            <p class="getInto">
-              Por favor ingresa el número de 16 dígitos de tu tarjeta
+        <div class="menu" id="menu">
+          <a href="#containerCheck" id="check" class="btnHeader">VERIFICAR</a>
+          <a href="#containerHow" id="how" class="btnHeader">¿CÓMO VERIFICAMOS?</a>
+          <a href="#containerUs" id="us" class="btnHeader">NOSOTRAS</a>
+        </div>
+        <div class="icon" id="open">
+          <span>&#9776;</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Instrucciones-->
+  <main>
+    <section id="containerCheck">
+      <section class="instructions">
+        <h1 id="titleValidator">Válidador de Tarjeta Virtual</h1>
+        <p id="firstParagraph">
+          Si crees que sufriste de alguna estafa con tu nueva tarjeta de
+          crédito
+        </p>
+        <h3 id="relevant">
+          ¡Te invitamos a válidar el número de tu tarjeta virtual!
+        </h3>
+        <div id="contIcons">
+          <div id="easy">
+            <p>
+              Sencillo
+              <img src="img/Iconos-sencillo.png" class="iconsIntro" alt="mano" />
             </p>
-              </div>
-            </div>
+            <!-- <p class="atributes">Sencillo</p> -->
           </div>
-          <div id="Card">
-            <input
-              type="text"
-              maxlength="16"
-              placeholder="1234 5678 9012 3456"
-              id="numberCard"
-              onclick="return (event.charCode >= 48 && event.charCode <= 57)"
-              required
-            />
-            <button type="button" class="btnAll" id="btnAll">Válidar</button>
-            <button type="button" class="btnAll" id="btnRetun">Volver a validar</button>
+          <div id="fast">
+            <p>
+              Rápido
+              <img src="img/Iconos-rapido.png" class="iconsIntro" alt="reloj=" />
+            </p>
+            <!-- <p class="atributes">Rápido</p> -->
           </div>
-          <div id="result">
-            <!-- Resultado Valido o no -->
+          <div id="secure">
+            <p>
+              Seguro
+              <img src="img/Iconos-seguro.png" class="iconsIntro" alt="escudo" />
+            </p>
+            <!-- <p class="atributes">Seguro</p> -->
           </div>
-        </section>
+        </div>
+        <h3 id="motivation">¡Juntos te ayudamos a prevenir!</h3>
       </section>
-      <section id="containerHow">
+      <!-- Formulario para solicitar tarjeta -->
+      <section class="card">
         <div>
-          <h2 class="titleNav">¿Cómo verificamos?</h2>
-          <p class="navParrafo">
-            Para válidar una tarjeta de crédito, utilizamos el "algoritmo de
-            Luhn", también conocido como "algoritmo de modulo 10". Es así que al
-            ingresar los dígitos de su tarjeta, nuestra herramienta web verifica
-            la autenticidad de ésta según los resultados de las operaciones de
-            sus números en el algoritmo.
-            <!-- insertar parte d explicación de wiki u otra página y poner "fuente" -->
-            <!-- insertar img de el algoritmo -->
+          <h2 class="titleCard">Válida tu tarjeta</h2>
+          <p class="getInto">Por favor ingresa el número de 16 dígitos de tu tarjeta </p>
+        </div>
+        <div>
+          <p class="getInto"> Si no sabes donde encontrarlo, haz click <a id="enlPopup" href="#popup">aqui</a>
           </p>
         </div>
-      </section>
-      <section id="containerUs">
-        <div>
-          <h2 class="titleNav">Nosotras</h2>
-          <p class="navParrafo">
-            Somos una empresa conformada por mujeres, que entrega diferentes
-            servicios virtuales. En este caso, facilitamos un validador de
-            tarjetas para clientes que utilizan tarjetas de crédito virtuales,
-            asegurando su autenticidad y validez para evitar situaciones
-            irregulares que pudiesen perjudicarlos. Queremos que te sientas
-            seguro y transparentar esta información para ti a través de nuestra
-            web.
-           <p class="navParrafo"> ¡Te animamos a invitar a tus amigos y familiares a usar nuestra web! </p>
-          </p>
-            <!-- insertar ilustración de nosotras o similar -->
-         
+        <div id="Card">
+          <input type="text" maxlength="16" placeholder="1234 5678 9012 3456" id="numberCard"
+            onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required />
+          <button type="button" class="btnAll" id="btnAll">Válidar</button>
+        </div>
+        <div id="result">
+          <!-- Resultado Valido o no -->
+        </div>
+        <div id="bttRetVal">
+          <button type="button" class="btnAll" id="btnRetun" onclick="location.reload();">Volver a validar</button>
         </div>
       </section>
-    </main>
-    <footer>
-      <p>Todos los derechos reservados ©2020</p>
-    </footer>
-    <script src="index.js" type="module"></script>
-  </body>
+    </section>
+    <section id="containerHow">
+      <div>
+        <h2 class="titleNav" id="titleVer">¿Cómo verificamos?</h2>
+        <p class="navParrafo">
+          Para válidar una tarjeta de crédito, utilizamos el "algoritmo de
+          Luhn", también conocido como "algoritmo de modulo 10". Es así que al
+          ingresar los dígitos de su tarjeta, nuestra herramienta web verifica
+          la autenticidad de ésta según los resultados de las operaciones de
+          sus números en el algoritmo.
+        </p>
+        <p id="extraPar">En la siguiente imagen puedes ver como funciona:</p>
+        <img id="luhnImg" src="img/luhn-validation.jpg" alt="Luhn">
+      </div>
+    </section>
+    <section id="containerUs">
+      <div>
+        <h2 class="titleNav">Nosotras</h2>
+        <p class="navParrafo">
+          Somos una organización dedicada a seguridad informatica, conformada por mujeres y respaldadas
+          por Laboratoria, que pone a tu disposición un validador de tarjetas de crédito virtuales,
+          para asegurar a sus clientes su veracidad evitando así situaciones irregulares que pudiesen
+          perjudicarlos.
+          Queremos que te sientas seguro y transparentar esta información para ti a través de nuestra
+          web, por lo que aseguramos máxima confidencialidad y te garantizamos que tus datos
+          crediticios no quedan almacenados en ninguna base de datos.
+
+          <p class="navParrafo"> ¡Te animamos a invitar a tus amigos y familiares a usar nuestra web! </p>
+          <img id="logoLab" src="img/logolab.png" alt="Laboratoria">
+        </p>
+      </div>
+    </section>
+<!-- pop up -->
+<div id="popup" class="overlay">
+  <div id="popupBody">
+      <a id="cerrar" href="#">&times;</a>
+      <div class="popupContent">
+         <img id="imgPopup" src="img/popup.jpg" alt="imagen-instruciones">
+      </div>
+  </div>
+</div>
+  </main>
+  <footer>
+    <p>Todos los derechos reservados ©2020</p>
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
